@@ -12,23 +12,11 @@
     </properties>
     <build>
     <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <configuration>
-                <archive>
-                    <manifestEntries>
-                        <splashscreen-image>${image.name}</splashscreen-image>
-                    </manifestEntries>
-                </archive>
-            </configuration>
-        </plugin>
-
+       <plugin> 
+           <groupId>org.springframework.boot</groupId> 
+           <artifactId>spring-boot-maven-plugin</artifactId>
+           <version>2.0.1.RELEASE</version> 
+        </plugin> 
     </plugins>
 </build>
 </project>
