@@ -12,11 +12,18 @@
     </properties>
     <build>
     <plugins>
-       <plugin> 
-           <groupId>org.springframework.boot</groupId> 
-           <artifactId>spring-boot-maven-plugin</artifactId>
-           <version>2.0.1.RELEASE</version> 
-        </plugin> 
+      <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+      <version>2.2.4.RELEASE</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>repackage</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
     </plugins>
 </build>
 </project>
